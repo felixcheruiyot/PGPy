@@ -2221,7 +2221,7 @@ class PGPKey(Armorable, ParentRef, PGPObject):
 
         return sigv
 
-    @KeyAction(KeyFlags.EncryptCommunications, KeyFlags.EncryptStorage, is_public=True)
+    #@KeyAction(KeyFlags.EncryptCommunications, KeyFlags.EncryptStorage, is_public=True)
     def encrypt(self, message, sessionkey=None, **prefs):
         """
         Encrypt a PGPMessage using this key.
